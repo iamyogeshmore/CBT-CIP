@@ -19,3 +19,15 @@ Check out the live version of the app here:
 Explore my portfolio here:
 
 - [Yogesh's Portfolio](https://yogesh-cbtc-portfolio.netlify.app/)
+
+## 📋 To-Do App
+
+In addition to the main CBTC project, you can explore my **To-Do App**, a simple and functional task manager that includes features like:
+
+- **Add Tasks**: Easily add new tasks to your to-do list.
+- **Toggle Task Completion**: Mark tasks as complete or incomplete.
+- **Delete Tasks**: Remove tasks from the list.
+
+You can check out the live version of the To-Do App here:
+
+- [To-Do App](https://yogesh-cbtc-todo-list.netlify.app/)
