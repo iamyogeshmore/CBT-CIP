@@ -1,0 +1,146 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #E0F7FA, #B2EBF2);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  background: linear-gradient(to right, #00BCD4, #0097A7);
+  color: white;
+  padding: 10px 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+.search-box input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #0097A7;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.search-box input:focus {
+  border-color: #00BCD4;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(to right, #00BCD4, #0097A7);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 120px;
+}
+
+.search-box button:hover {
+  background: linear-gradient(to right, #0097A7, #00BCD4);
+}
+
+.search-box button:active {
+  transform: scale(0.95);
+}
+
+.weather-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+.weather-info h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+    max-width: 90%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+    max-width: 90%;
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .search-box button {
+    max-width: 120px;
+  }
+}
